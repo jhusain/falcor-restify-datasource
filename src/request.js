@@ -1,6 +1,5 @@
 'use strict';
 
-var getCORSRequest = require('./getCORSRequest');
 var hasOwnProp = Object.prototype.hasOwnProperty;
 var restify = require('restify');
 
