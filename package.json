@@ -1,19 +1,16 @@
 {
-  "name": "falcor-http-datasource",
+  "name": "falcor-restify-datasource",
   "version": "0.1.1",
-  "description": "This package contains falcor components for use in browsers.",
+  "description": "This package contains falcor components for use in Restify servers.",
   "main": "src/XMLHttpSource.js",
-  "homepage": "https://github.com/Netflix/falcor-browser",
-  "browser": {
-    "./src/getXMLHttpRequest.js": "./src/getXMLHttpRequest.browser.js"
-  },
+  "homepage": "https://github.com/Netflix/falcor-restify-datasource",
   "author": {
     "name": "Netflix",
     "url": "https://github.com/Netflix/falcor/authors.txt"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Netflix/falcor-browser.git"
+    "url": "git://github.com/jhusain/falcor-restify-datasource.git"
   },
   "licenses": [
     {
@@ -22,26 +19,18 @@
     }
   ],
   "scripts": {
-    "build:pretty": "browserify ./src/XMLHttpSource.js > ./dist/XMLHttpSource.js",
-    "build:min": "browserify . | uglifyjs > ./dist/XMLHttpSource.min.js",
-    "build": "npm run build:min && npm run build:pretty",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "Falcor",
     "Browser"
   ],
   "dependencies": {
-    "node-restify": "^0.2.1",
-    "restify": "^4.0.3",
-    "xmlhttprequest": "^1.7.0"
+    "restify": "^4.0.3"
   },
   "license": "ALV2",
   "bugs": {
     "url": "https://github.com/Netflix/falcor-browser/issues"
   },
   "devDependencies": {
-    "browserify": "^11.0.0",
-    "uglifyjs": "^2.4.10"
   }
 }
