@@ -64,7 +64,7 @@ function request(method, options, context) {
       context.onBeforeRequest(config);
     }
 
-    client[config.method]({ version: '*' }, function(error, req, res, obj) {
+    client[config.method.toLowerCase()]({ version: '*' }, function(error, req, res, obj) {
       if (!isDone) {
         if (error) {
           observer.onError(error);
